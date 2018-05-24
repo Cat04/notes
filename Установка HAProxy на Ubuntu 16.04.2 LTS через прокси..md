@@ -1,9 +1,9 @@
 Для того, чтобы установить HAProxy на Ubuntu 16.04.2 LTS через прокси необходимо выполнить следующие найстроки: 
  1. в файле /etc/apt/apt.conf прописать настройки прокси сервера: 
 
-    > Acquire::http::proxy "http://username:password@proxy:3128/";
-    > Acquire::https::proxy "https://username:password@proxy:3128/";
-    > Acquire::ftp::proxy "ftp://username:password@proxy:3128/";
+    Acquire::http::proxy "http://username:password@proxy:3128/";
+    Acquire::https::proxy "https://username:password@proxy:3128/";
+    Acquire::ftp::proxy "ftp://username:password@proxy:3128/";
 
  2. в файле /etc/environment также прописать настройки прокси сервера: 
 
